@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="assets/css/dashboard.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+  <title>Dashboard 2</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins' !important;
+}
+p{
+  font-size:14px;
+}
+
+  .nav-link {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  a.nav-link {
+    color: white !important;
+}
+
+  a.nav-link.active {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  a.nav-link:hover {
+    background:rgba(49, 62, 70, 0.199);
+    border-radius: 5px;
+  }
+
+  nav.navbar.navbar-expand-xl.navbar-dark.fixed-top.navbar-main.py-0.navbar-backend {
+    background: rgba(2, 31, 48, 0.75);
+    
+  }
+  ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    gap: 13px;
+}
+
+  i {
+    color: #a1a9ad8f;
+    font-size: 18px;
+    margin-right: 16px;
+  }
+  a.nav-link {
+    padding: 16px;
+}
+.avatar-image{
+  border-radius: 100%;
+}
+img.avatar-icon.me-2{
+  width:26px;
+  border-radius: 100%;
+}
+span.me-2 {
+    color: #007c89;
+    font-weight: 600;
+    font-size: 17px;
+}
+.part-2 {
+    line-height: 0.5;
+    padding-top: 12px;
+}
+span.active-button {
+    background-color: #b5dd95;
+    border-radius: 20px;
+    font-size: 11px;
+    padding: 2px 10px;
+    text-transform: uppercase;
+}
+a.dropdown-item.d-flex.align-items-center {
+    font-size: 14px;
+    padding: 15px 13px;
+    color: #000;
+    font-weight: 500;
+}
+.navbar-icon i {
+    color:#333333a6;
+}
+
+.nav-item.hover {
+    background:  #a0d6d2;
+}
+li.p-4.d-flex.align-items-center.justify-content-center {
+    background-color: #d6eedc;
+    position: absolute;
+    top: 0;
+    height: 260px;
+    right: 0;
+    background-image: url(assets/img/back.svg);
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: center right;
+}
+ul.dropdown-menu.dropdown-menu-end.show {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border: 1px solid rgba(0,0,0,.15);
+}
+
+@media only screen and (max-width: 600px) {
+  li.p-4.d-flex.align-items-center.justify-content-center {
+    visibility: hidden;
+}
+
+a.navbar-brand {
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+button.navbar-toggler {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  } 
+  a.nav-link.active {
+    width: 100%;
+}
+   }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top navbar-main py-0 navbar-backend">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" width="140px">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-------Dashboard-->
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="fa-solid fa-house-user"></i>Dashboard</a>
+          </li>
+          <!-------Dashboard-->
+          <!-------CUSTOMER-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-user"></i>Customer</a>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <!-------CUSTOMER-->
+          <!-------Plan-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-book"></i>Plan</a>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <!-------Plan-->
+          <!-------ADMIN-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-user-tie"></i>Admin</a>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <!-------ADMIN-->
+          <!-------Sending-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-rotate"></i>Sending</a>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <!-------Sending-->
+          <!-------Setting-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>Setting</a>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <!-------Setting-->
+          <!-------PLGUNIN-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-plug"></i>Plugin</a>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <!-------PLUGIN-->
+          <!-------REPORT-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-pen-to-square"></i>Report</a>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!------REPORT-->
+
+          <!--------RIGHT SIDE-->
+          <div class="navbar-right">
+
+            <ul class="navbar-nav ">
+              <li class="nav-item dropdown">
+                <a href="" class="nav-link d-flex align-items-center  py-3  dropdown-toggle" data-bs-toggle="dropdown" >
+                  <img class="avatar-icon me-2" src="assets/img/user-placeholder.svg" width="80px" >
+               <span>Sandeep Sharma</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end ">
+                  <li  style="width: 500px">
+                    <div class="d-flex mb-2">
+                      <div class="avatar me-3">
+                        <a class="navbar-brand" href="#">
+                       <img class="avatar-image ms-2" src="assets/img/user-placeholder.svg" width="80px" >
+                        </a>
+                      </div>
+                      <div class="part-2">                       
+                          <p  class="profile-details"> <span class="me-2 fs-6">Sandeep Sharma</span></p>
+                          <p class="profile-email">sandeep.codesoftic@gmail.com</p>
+                          <span class="active-button">Active</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item active"><a href="" class="dropdown-item d-flex align-items-center">
+                    <div class="navbar-icon">
+                    <i class="far fa-user-circle"></i>
+                  </div>
+                  &nbsp;Account
+                    </a></li>
+                    <li class="nav-item">
+                      <a href="" class="dropdown-item d-flex align-items-center">
+                        <div class="navbar-icon">
+                          <i class="fas fa-user-cog"></i>
+                        </div>
+                        Admin API
+                      </a>
+                     </li>
+                     <li class="nav-item"><a href="" class="dropdown-item d-flex align-items-center">
+                      <div class="navbar-icon">
+                        <i class="fas fa-power-off"></i>
+                      </div>     
+                      &nbsp;Logout            
+                         </a></li>
+                      <li class="p-4 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/sign-stand.svg" width="80px">
+                    </li>
+
+
+                </ul>
+              </li>
+           </ul>
+          </div>
+          <!--------RIGHT SIDE-->
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>

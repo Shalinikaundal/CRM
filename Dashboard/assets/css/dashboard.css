@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins' !important;
+}
+
+span#inputEmail,
+#inputPassword {
+    color: #555;
+}
+nav.navbar.navbar-expand-xl.navbar-dark.fixed-top.py-0 {
+    background-color:rgba(0, 25, 39, 0.75);
+}
+a.nav-link {
+    color: white !important;
+}
+
+a.nav-link.active {
+ background: rgba(0,0,0,0.1);
+ height:52px;
+}
+
+
+svg {
+    width: 18px;
+    margin: 8px;
+    color:white;
+}
+
+span{
+    font-size:13px;
+}
+
+svg.profile-svg {
+    width: 80px;
+    border-radius: 100px;
+}
+
+li.nav-item.active{
+    background: rgba(0,0,0,0.1);
+}
+p#profile-details {
+    font-size: 14px;
+}
+p#profile-details {
+    font-size: 14px;
+    color: #007c89;
+    font-weight: bold;
+}
+ul.dropdown-menu.dropdown-menu-end.dropdown-menu-bottom.top-user-menus.show{
+    width:420px;
+}
+li.nav-item {
+    padding-left: 9px;
+}
+span.label-inside {
+    background: #b5dd95;
+    border: #a2c492;
+    border-radius: 100px;
+    color: #172315;
+    font-size: 11px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
